@@ -5,6 +5,22 @@ function prayerTimes(latitude, longitude) {
     .then(function (response) {
       let date = new Date();
       let today = date.getDate() - 1;
+      let data = response.data[0].timings;
+
+      let app = document.getElementById("app");
+      let table = document.createElement("table");
+      let tbody = document.createElement("tbody");
+
+      for (const index in data) {
+        let row = tbody.insertRow();
+        let name = row.insertCell(0);
+        let time = row.insertCell(1);
+        name.innerHTML = index;
+        time.innerHTML = data[index];
+        tbody.appendChild(row);
+      }
+      table.appendChild(tbody);
+      app.appendChild(table);
       // console.log(today);
       // console.log(response.data[today]);
     });
