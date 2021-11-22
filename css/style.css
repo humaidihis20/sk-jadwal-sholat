@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+@font-face {
+  font-family: "eb_garamond_sc08_regular";
+  src: url("/css/ebgaramondsc08-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+#app {
+  width: 400px;
+  margin: 0 auto;
+}
+
+#app h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0px;
+  padding: 0.3rem;
+  background-color: #2196f3;
+  text-align: center;
+  color: #fff;
+  font-family: "eb_garamond_sc08_regular";
+  font-weight: 600;
+}
+
+#app table {
+  border-collapse: collapse;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+#app table td {
+  font-size: 1rem;
+  padding: 0.6rem;
+}
+
+#app table tr {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+#app table tr:nth-child(even) {
+  background-color: #e8e8ee;
+}
+
+#app table tr:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  cursor: pointer;
+}
