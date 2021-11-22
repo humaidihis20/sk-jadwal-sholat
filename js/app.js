@@ -33,7 +33,9 @@ function success(position) {
 
 // error / kesalahan
 function error() {
-  alert("Posisi tidak dapat di akses");
+  // default latitude dan longitude Jakarta
+  prayerTimes(-6.2, 106.816666); // jakarta geolocation
+  // prayerTimes(-5.135399, 119.42379); // makassar
 }
 
 // menampilkan pesan error geolocation
